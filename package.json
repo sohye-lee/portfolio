@@ -19,8 +19,10 @@
   "dependencies": {
     "bootstrap": "^4.5.2",
     "bootstrap-social": "^5.1.1",
+    "circletype": "^2.3.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
+    "lettering": "^0.4.1",
     "popper.js": "^1.16.1"
   },
   "description": ""

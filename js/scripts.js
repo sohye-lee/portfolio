@@ -1,4 +1,6 @@
 
+
+
 // like button on navbar : if it is clicked, one like + 
 
 $(function (){
@@ -14,45 +16,51 @@ $(function (){
 });
 
 
+// text switch on front page
 
+$('.name4').css('display',"none");
+$('.name5').css('display',"none");
+$('.name6').css('display',"none");
 
-let hello = document.querySelector('.name1');
-let iam = document.querySelector('.name2');
-let sohye = document.querySelector('.name3');
-let about = document.querySelector('.name4');
-let project = document.querySelector('.name5');
-let contact = document.querySelector('.name6'); 
-
-about.style.display="none";
-project.style.display="none";
-contact.style.display="none";
-
-$(hello).hover(function() {
+$('.name1').hover(function() {
     $(this).css('display','none');
-    $(about).css('display','inline-block');
+    $('.name4').css('display','inline-block');
 }, function() {
     $(this).css('display','inline-block');
-    $(about).css('display','none');
+    $('.name4').css('display','none');
 })
 
-$(iam).hover(function() {
+$('.name2').hover(function() {
     $(this).css('display','none');
-    $(project).css('display','inline-block');
+    $('.name5').css('display','inline-block');
 }, function() {
     $(this).css('display','inline-block');
-    $(project).css('display','none');
+    $('.name5').css('display','none');
 })
 
-$(sohye).hover(function() {
+$('.name3').hover(function() {
     $(this).css('display','none');
-    $(contact).css('display','inline-block');
+    $('.name6').css('display','inline-block');
 }, function() {
     $(this).css('display','inline-block');
-    $(contact).css('display','none');
+    $('.name6').css('display','none');
 })
 
+
+// $('.name1').hover(function() {
+//     $(this).addClass('d-none');
+//     $('.name2').removeClass('d-none');
+// }), function() {
+//     $(this).removeClass('d-none');
+//     $('.name4').addClass('d-none');
+// }
+
+//tooltip function
 $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="tooltip"]').tooltip();
 })
 
 
+// circular text effect 
+const circleType = new CircleType(document.getElementById('circleText'));
+circleType.radius(90);
