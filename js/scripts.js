@@ -64,3 +64,4 @@ $(function () {
 // circular text effect 
 const circleType = new CircleType(document.getElementById('circleText'));
 circleType.radius(90);
+

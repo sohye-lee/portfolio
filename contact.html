@@ -42,7 +42,7 @@
                         LET'S GET IN TOUCH
                     </h1>
                 </div>
-                <div class="col-4 text-left py-5" id="tel-email">
+                <div class="col-sm-4 text-left py-5" id="tel-email">
                     <div class="mt-3">
                         <a href="tel:+15713961662">
                             <svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-phone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -57,10 +57,53 @@
                             <i class="fa fa-paper-plane mr-3"></i>sohyelee@gmail.com
                         </a>
                     </div>
-                    
+                    <div class="mt-3">
+                        <h4><i class="fa fa-home mr-3"></i>Fairfax, Virginia, USA</h4>
+                    </div>
                 </div>
-                <div class="col-8">
-                    
+                <div class="col-sm-8 d-flex justify-content-start row px-4" id="contactForm">
+                    <form class="col-8">
+                        <div class="form-group row">
+                            <label for="firstName" class="col-md-3 col-form-label">FIRST NAME</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lastName" class="col-md-3 col-form-label">LAST NAME</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-md-3 col-form-label">EMAIL</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="areaCode" class="col-2 col-form-label">TEL</label>
+                            <div class="col-3 px-0">
+                                <input id="areaCode" class="form-control" type="tel" name="areaCode" placeholder="Area Code" />
+                            </div>
+                            <div class="col-7">
+                                <input type="tel" class="form-control" name="telNum" placeholder="Tel. Number" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-12">
+                                <label for="comment" class="col-12 col-form-label px-0">MESSAGE</label>
+                                <div class="col-12 px-0">
+                                    <textarea class="form-control" name="comment" id="comment" cols="30" rows="6" placeholder="Whatever you want to say or ask"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-12">
+                                <button class="btn btn-dark btn-lg btn-block" id="contactButton">SUBMIT</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
